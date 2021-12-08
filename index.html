@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Background</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384- B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="icon" href="img/favicon.ico">
+</head>
+<body>
+    <section>
+        <div class="theme-switch-wrapper">
+            <span id="toggle-icon">
+                <i class="fas fa-sun"></i>
+            </span>
+            <label class="theme-switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>
+    
+        <nav id="nav">
+            <a href="#">GreatSpiration</a>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </section>
+    
+    <section id="home">
+        <div class="containerAnim">
+            <svg viewBox="0 0 1000 200">
+                <text id="myAnimation" x="50%" y="150px" text-anchor="middle">GreatSpiration</text>
+                <use xlink:href="#myAnimation" class="replicate A"></use>
+                <use xlink:href="#myAnimation" class="replicate B"></use>
+                <use xlink:href="#myAnimation" class="replicate C"></use>
+                <use xlink:href="#myAnimation" class="replicate D"></use>
+                <use xlink:href="#myAnimation" class="replicate E"></use>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="myImages">
+        <div class="containerText">
+            <div class="paragraphPage">
+                <h1>Welcome!</h1>
+                <p>We are glad you visited us today.<br>
+                   Check out our most recent update.<br>
+                   We're harding to bring you more excitments.
+                </p>
+            </div>
+            <div class="imageAlign" >
+                <img class="imageTarget" src="img/float.svg" alt="image">
+                <img class="imageTarget" hidden src="img/float2.svg" alt="image">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="social-icons">
+            <i href="https://github.com/Ataene" class="fab fa-github"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedIn"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
